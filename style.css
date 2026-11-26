@@ -65,7 +65,7 @@ img {
   background-image: url(images/jupiter-color.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 70vh;
+  min-height: 100vh;
 }
 
 /* Innhold, facts og moons */
@@ -74,7 +74,7 @@ img {
 #moons {
   display: flex;
   align-items: center;
-  min-height: 70vh;
+  min-height: 100vh;
   padding: 4rem 10%;
   background-size: cover;
   background-position: center;
@@ -84,8 +84,7 @@ img {
   justify-content: flex-end;
   background-image:
     linear-gradient(rgba(11, 13, 23, 0.4), rgba(11, 13, 23, 0.4)),
-    /* Gjør bakgrunnsbildet litt mørkere så det er litt enkere å lese*/
-    url(images/jupiter-gray.jpg);
+    url(images/jupiter-gray.jpg); /*Gjør også bakgrunnsbildet litt mørkere så det er litt enklere å lese*/
 }
 
 #moons {
