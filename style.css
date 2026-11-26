@@ -4,7 +4,6 @@
   --hover: #d97742;
   --heading: #e8c08d;
   --text-light: #f4f1ea;
-  --text-muted: #b8b5ad;
 }
 
 * {
@@ -65,4 +64,67 @@ img {
   background-size: cover;
   background-position: center;
   min-height: 70vh;
+}
+
+#facts,
+#moons {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  padding: 4rem 10%;
+  background-size: cover;
+  background-position: center;
+}
+
+#facts {
+  justify-content: flex-end;
+  background-image:
+    linear-gradient(rgba(11, 13, 23, 0.4), rgba(11, 13, 23, 0.4)),
+    url(images/jupiter-gray.jpg);
+}
+
+#moons {
+  justify-content: flex-start;
+  background-image:
+    linear-gradient(rgba(11, 13, 23, 0.4), rgba(11, 13, 23, 0.4)),
+    url(images/jupiter-moons.jpg);
+}
+
+article {
+  max-width: 500px;
+  background-color: rgba(11, 13, 23, 0.85);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+article h2 {
+  color: var(--heading);
+  margin-bottom: 1rem;
+}
+
+article p {
+  line-height: 1.5;
+  color: var(--text-light);
+}
+
+#gallery div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 1.5rem;
+}
+
+#gallery img {
+  width: 48%;
+  height: 300px;
+  object-fit: cover;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  padding: 2rem;
 }
