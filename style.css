@@ -59,12 +59,16 @@ img {
   max-width: 100%;
 }
 
+/* Hero banner */
+
 #hero {
   background-image: url(images/jupiter-color.jpg);
   background-size: cover;
   background-position: center;
   min-height: 70vh;
 }
+
+/* Innhold, facts og moons */
 
 #facts,
 #moons {
@@ -80,6 +84,7 @@ img {
   justify-content: flex-end;
   background-image:
     linear-gradient(rgba(11, 13, 23, 0.4), rgba(11, 13, 23, 0.4)),
+    /* Gjør bakgrunnsbildet litt mørkere så det er litt enkere å lese*/
     url(images/jupiter-gray.jpg);
 }
 
@@ -107,19 +112,40 @@ article p {
   color: var(--text-light);
 }
 
+/* bildegalleri */
+
+#gallery {
+  padding: 4rem 10%;
+}
+
+#gallery h2 {
+  color: var(--heading);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
 #gallery div {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1.5rem;
-  margin: 1.5rem;
 }
 
 #gallery img {
   width: 48%;
   height: 300px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
 }
+
+#gallery img:hover {
+  transform: scale(
+    1.03
+  ); /* Gjør så bildene popper litt ut når de blir hoveret over */
+}
+
+/* Footer med sosiale medier */
 
 #contact {
   display: flex;
@@ -127,4 +153,19 @@ article p {
   align-items: center;
   background-color: var(--bg-secondary);
   padding: 2rem;
+}
+
+#socials {
+  display: flex;
+  gap: 1.2rem;
+}
+
+#socials img {
+  width: 28px;
+  height: 28px;
+  filter: invert(1); /* Gjør de svarte SVG-ikonene hvite */
+}
+
+#socials a:hover {
+  opacity: 0.7; /* Hover effekt på sosiale medier ikonene */
 }
